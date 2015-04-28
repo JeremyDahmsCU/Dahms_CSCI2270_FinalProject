@@ -2,14 +2,16 @@
 Final Project for CSCI2270
 
 This is a simple project that manipulates a group of numbers by putting them into and reading them out of various data structures.
-The list of numbers' length and content will be decided by the user and can be changed or cleared.
-The data structures used will be:
-1. Linked Lists
+The list of numbers' length and content is decided by the user.
+The data structures are:
+1. Vectors
 2. Binary Search Trees
-The numbers can be taken out of the BST with:
+The numbers can be sorted with:
+1. Quick Sort
+2. Insertion Sort
+3. Bubble Sort
+The numbers can be printed from the BST with:
 1. Pre-order traversal
 2. In-order traversal
 3. Post-order traversal
-Other methods will include:
-1. HasPathSum
-2. Shortest Path Algorithms
+
