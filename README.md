@@ -16,7 +16,9 @@ The numbers can be printed from the BST with:
 3. Post-order traversal
 
 How to run
+
 Run by downloading main.cpp, Manipulator.cpp, and Manipulator.h.  When you first run the program it will tell you to enter some numbers.  Do this by typing any number, then hitting enter, then repeat until you have entered as many numbers as you want.  If you do not enter a number my program will read it as a zero and it will not be added to the numbers vector.  This also means that the program does not accept zeroes in the vector.  After you have finished entering you numbers the program will tell you the numbers in the numbers vector in the order you put them in.  You can then manipulate the numbers by using the main menu.
 
 What to add
+
 If you want to add something it would be nice if there was a function that could randomize the numbers in the vector so all 3 sorting algoritms could be tested in the same run.
