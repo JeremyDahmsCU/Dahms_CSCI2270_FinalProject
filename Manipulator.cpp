@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <stdlib.h>
+#include <ctime>
 
 using namespace std;
 
@@ -50,7 +51,7 @@ Post-conditions: prints numbers in order of how they are in the vector
 */
 void Manipulator::printNumbers()
 {
-    cout<<"These are you numbers:"<<endl;
+    cout<<"These are your numbers:"<<endl;
     for(int i = 0; i < numbers.size(); i++)
     {
         cout<<numbers[i]<<" ";
@@ -340,5 +341,34 @@ void Manipulator::BST(int selection)
     {
         postOrder(root);
         cout<<endl;
+    }
+}
+
+/*
+Function prototype:
+void Manipulator::randomizeVector()
+
+Function description:
+This function fills the numbers vector with random numbers that range from 1 - 20.
+
+Example:
+Manipulator m
+m.randomizeVector()
+
+Pre-conditions: Vector must be initialized
+Post-conditions: Fills and randomizes numbers in vector
+*/
+void Manipulator::randomizeVector()
+{
+    //Clearing  numbers in vector
+    numbers.clear();
+
+    srand((unsigned)time(NULL));
+    int a = rand() % 20 + 1; //1 to 20
+    for (int i =0; i < a; i++)
+    {
+        int b = rand() % 20 + 1;
+        numbers.push_back(b);
+        //cout << numbers[i] << endl;
     }
 }
