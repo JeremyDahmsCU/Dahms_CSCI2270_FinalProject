@@ -28,6 +28,7 @@ class Manipulator
         void inOrder(node * root);
         void postOrder(node * root);
         void BST(int selection);
+        void randomizeVector();
 
     protected:
     private:

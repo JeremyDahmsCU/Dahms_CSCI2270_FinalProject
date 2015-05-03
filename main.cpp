@@ -15,7 +15,8 @@ void displayMenu()
     cout<<"4. BST Pre-order"<<endl;
     cout<<"5. BST In-order"<<endl;
     cout<<"6. BST Post-order"<<endl;
-    cout<<"7. Quit"<<endl;
+    cout<<"7. Randomize Vector"<<endl;
+    cout<<"8. Quit" << endl;
     cout<<"=================="<<endl;
     cout<<endl;
 }
@@ -39,7 +40,7 @@ int main()
     int in;
     cin>>in;
     cout<<endl;
-    while(in != 7 && m.getS() > 0)
+    while(in != 8 && m.getS() > 0)
     {
         if(in == 1)
         {
@@ -67,6 +68,11 @@ int main()
         else if(in == 6)
         {
             m.BST(in);
+        }
+        else if (in == 7)
+        {
+            m.randomizeVector();
+            m.printNumbers();
         }
         else
         {
